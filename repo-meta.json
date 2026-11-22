@@ -1,0 +1,32 @@
+{
+  "name": "240k-transit-apis-for-agents",
+  "old_name": "270k-transit-apis-for-agents",
+  "new_name": "240k-transit-apis-for-agents",
+  "url": "https://github.com/agentpopulation/240k-transit-apis-for-agents",
+  "description": "249,684 transit API endpoints that passed a keyless data call. For agent tools, apps, pipelines and evals. CSV, CC BY 4.0.",
+  "homepage": "https://agentpopulation.com/apis",
+  "topics": [
+    "api-endpoints",
+    "open-data",
+    "dataset",
+    "ai-agents",
+    "agent-tools",
+    "agentpopulation",
+    "transit-data",
+    "gtfs",
+    "gbfs",
+    "bike-share",
+    "traffic-data",
+    "public-transport"
+  ],
+  "release": {
+    "tag": "snapshot-2026-11-15",
+    "title": "Transit API endpoints · snapshot 15 Nov 2026 · 249,684 endpoints",
+    "notesFile": "RELEASE_NOTES.md",
+    "manifest": "../_release/transit-api-endpoints/release.json",
+    "assets": [
+      "../_release/transit-api-endpoints/Transit_API_Endpoints_AgentPopulation_Snapshot_2026-11-15.csv.gz",
+      "../_release/transit-api-endpoints/SHA256SUMS.txt"
+    ]
+  }
+}

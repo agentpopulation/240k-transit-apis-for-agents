@@ -1,0 +1,2536 @@
+{
+  "repo": "transit-api-endpoints",
+  "title": "Transit API endpoints",
+  "snapshot": "2026-11-15",
+  "snapshot_text": "15 Nov 2026",
+  "snapshot_time": "2026-11-15 09:06:22 IST",
+  "run": false,
+  "tested_total": 5129834,
+  "passed_total": 3726509,
+  "rows": 249684,
+  "unique_urls": 249684,
+  "services": 14126,
+  "country_codes": 249,
+  "single_country": null,
+  "agent_ready": 174859,
+  "range": {
+    "min": "2026-11-10",
+    "max": "2026-11-15",
+    "text": "10–15 Nov 2026"
+  },
+  "formats": {
+    "json": 174859,
+    "csv": 37454,
+    "xml": 22774,
+    "geojson": 6463,
+    "zip": 4807,
+    "txt": 2897,
+    "gtfs": 430
+  },
+  "categories": {
+    "Transport & Mobility": 216383,
+    "Government & Open Data": 22289,
+    "Navigation & Geo/Maps": 4602,
+    "Maritime": 1802,
+    "Aviation": 1167,
+    "Hydrology & Oceans": 922,
+    "Weather & Climate": 595,
+    "Statistics & Economy": 583,
+    "Environment": 401,
+    "Hazards": 341,
+    "Health": 269,
+    "Science": 133,
+    "Energy": 131,
+    "Finance": 64,
+    "Other": 2
+  },
+  "tags": {
+    "no-key": 249684,
+    "transit": 243425,
+    "agent-ready": 174859,
+    "json": 174859,
+    "maps": 116678,
+    "open-data": 67792,
+    "csv": 37454,
+    "government": 32361,
+    "traffic": 25630,
+    "xml": 22774,
+    "bike-share": 17059,
+    "gbfs": 16051,
+    "statistics": 13164,
+    "parking": 10835,
+    "geojson": 6463,
+    "air-quality": 6101,
+    "weather": 2590,
+    "aviation": 2379,
+    "maritime": 2216,
+    "economy": 1773,
+    "oceans": 1380,
+    "environment": 1374,
+    "health": 1355,
+    "gtfs": 1148,
+    "finance": 928,
+    "water": 922,
+    "science": 837,
+    "energy": 676,
+    "forecast": 507,
+    "elevation": 434,
+    "rivers": 427,
+    "hazards": 408,
+    "climate": 272,
+    "groundwater": 113,
+    "geocoding": 88,
+    "floods": 85,
+    "volcanoes": 60,
+    "earthquakes": 34,
+    "tides": 25,
+    "wildfire": 14,
+    "ai-ml": 9,
+    "mcp-server": 7,
+    "tsunami": 4,
+    "embeddings": 2,
+    "speech": 2
+  },
+  "dates": {
+    "2026-11-15": 163668,
+    "2026-11-14": 77830,
+    "2026-11-13": 897,
+    "2026-11-12": 4493,
+    "2026-11-11": 2787,
+    "2026-11-10": 9
+  },
+  "countryNames": {
+    "US": "United States",
+    "CA": "Canada",
+    "PT": "Portugal",
+    "FR": "France",
+    "EU": "European Union",
+    "AR": "Argentina",
+    "AT": "Austria",
+    "CZ": "Czechia",
+    "DE": "Germany",
+    "ES": "Spain",
+    "HR": "Croatia",
+    "IT": "Italy",
+    "PL": "Poland",
+    "RO": "Romania",
+    "SE": "Sweden",
+    "SI": "Slovenia",
+    "SK": "Slovakia",
+    "BA": "Bosnia and Herzegovina",
+    "BE": "Belgium",
+    "CH": "Switzerland",
+    "CY": "Cyprus",
+    "GB": "United Kingdom",
+    "NO": "Norway",
+    "BR": "Brazil",
+    "FI": "Finland",
+    "IL": "Israel",
+    "CO": "Colombia",
+    "NL": "Netherlands",
+    "DK": "Denmark",
+    "MY": "Malaysia",
+    "LT": "Lithuania",
+    "JP": "Japan",
+    "NZ": "New Zealand",
+    "AU": "Australia",
+    "KR": "South Korea",
+    "IE": "Ireland",
+    "CN": "China",
+    "IN": "India",
+    "BG": "Bulgaria",
+    "GR": "Greece",
+    "VN": "Vietnam",
+    "HU": "Hungary",
+    "AL": "Albania",
+    "CL": "Chile",
+    "TW": "Taiwan",
+    "ZA": "South Africa",
+    "PE": "Peru",
+    "VI": "Virgin Islands, U.S.",
+    "RU": "Russia",
+    "RS": "Serbia",
+    "PH": "Philippines",
+    "ZW": "Zimbabwe",
+    "YE": "Yemen",
+    "PS": "Palestine",
+    "LU": "Luxembourg",
+    "BB": "Barbados",
+    "PY": "Paraguay",
+    "BY": "Belarus",
+    "TM": "Turkmenistan",
+    "CF": "Central African Republic",
+    "ER": "Eritrea",
+    "BN": "Brunei Darussalam",
+    "KP": "North Korea",
+    "TK": "Tokelau",
+    "LY": "Libya",
+    "MN": "Mongolia",
+    "MQ": "Martinique",
+    "RW": "Rwanda",
+    "SC": "Seychelles",
+    "SB": "Solomon Islands",
+    "BI": "Burundi",
+    "FO": "Faroe Islands",
+    "PF": "French Polynesia",
+    "TJ": "Tajikistan",
+    "NU": "Niue",
+    "TF": "French Southern Territories",
+    "EG": "Egypt",
+    "BZ": "Belize",
+    "LK": "Sri Lanka",
+    "AD": "Andorra",
+    "GA": "Gabon",
+    "MV": "Maldives",
+    "KN": "Saint Kitts and Nevis",
+    "WS": "Samoa",
+    "QA": "Qatar",
+    "ID": "Indonesia",
+    "TR": "Turkiye",
+    "IO": "British Indian Ocean Territory",
+    "SG": "Singapore",
+    "SA": "Saudi Arabia",
+    "MM": "Myanmar",
+    "KH": "Cambodia",
+    "RE": "Réunion",
+    "EE": "Estonia",
+    "LV": "Latvia",
+    "IS": "Iceland",
+    "MD": "Moldova",
+    "AX": "Åland Islands",
+    "AM": "Armenia",
+    "UY": "Uruguay",
+    "UA": "Ukraine",
+    "TG": "Togo",
+    "LA": "Laos",
+    "MX": "Mexico",
+    "LI": "Liechtenstein",
+    "SV": "El Salvador",
+    "HK": "Hong Kong",
+    "NG": "Nigeria",
+    "XK": "Kosovo",
+    "MK": "North Macedonia",
+    "MC": "Monaco",
+    "AE": "United Arab Emirates",
+    "KE": "Kenya",
+    "PA": "Panama",
+    "DO": "Dominican Republic",
+    "EC": "Ecuador",
+    "PK": "Pakistan",
+    "AI": "Anguilla",
+    "TH": "Thailand",
+    "TN": "Tunisia",
+    "DZ": "Algeria",
+    "CM": "Cameroon",
+    "YT": "Mayotte",
+    "CD": "DR Congo",
+    "IR": "Iran",
+    "OM": "Oman",
+    "BO": "Bolivia",
+    "LC": "Saint Lucia",
+    "TT": "Trinidad and Tobago",
+    "GE": "Georgia",
+    "HT": "Haiti",
+    "PG": "Papua New Guinea",
+    "JO": "Jordan",
+    "JM": "Jamaica",
+    "UZ": "Uzbekistan",
+    "ME": "Montenegro",
+    "VC": "Saint Vincent and the Grenadines",
+    "BF": "Burkina Faso",
+    "KY": "Cayman Islands",
+    "GM": "Gambia",
+    "SS": "South Sudan",
+    "DJ": "Djibouti",
+    "SD": "Sudan",
+    "CC": "Cocos (Keeling) Islands",
+    "BT": "Bhutan",
+    "AO": "Angola",
+    "IQ": "Iraq",
+    "GP": "Guadeloupe",
+    "TL": "Timor-Leste",
+    "LB": "Lebanon",
+    "KZ": "Kazakhstan",
+    "BS": "Bahamas",
+    "AG": "Antigua and Barbuda",
+    "BJ": "Benin",
+    "GL": "Greenland",
+    "FJ": "Fiji",
+    "AZ": "Azerbaijan",
+    "BW": "Botswana",
+    "ZM": "Zambia",
+    "GI": "Gibraltar",
+    "CU": "Cuba",
+    "KI": "Kiribati",
+    "AF": "Afghanistan",
+    "SY": "Syria",
+    "GF": "French Guiana",
+    "VE": "Venezuela",
+    "NC": "New Caledonia",
+    "HN": "Honduras",
+    "CR": "Costa Rica",
+    "MA": "Morocco",
+    "UG": "Uganda",
+    "MW": "Malawi",
+    "GW": "Guinea-Bissau",
+    "KW": "Kuwait",
+    "GN": "Guinea",
+    "SZ": "Eswatini",
+    "PW": "Palau",
+    "CG": "Republic of the Congo",
+    "BD": "Bangladesh",
+    "KM": "Comoros",
+    "MF": "Saint Martin (French part)",
+    "JE": "Jersey",
+    "VU": "Vanuatu",
+    "AW": "Aruba",
+    "MU": "Mauritius",
+    "NA": "Namibia",
+    "PR": "Puerto Rico",
+    "GT": "Guatemala",
+    "GH": "Ghana",
+    "FM": "Micronesia",
+    "ML": "Mali",
+    "SL": "Sierra Leone",
+    "MH": "Marshall Islands",
+    "TO": "Tonga",
+    "AS": "American Samoa",
+    "NF": "Norfolk Island",
+    "TZ": "Tanzania",
+    "LS": "Lesotho",
+    "MR": "Mauritania",
+    "SO": "Somalia",
+    "TC": "Turks and Caicos Islands",
+    "NI": "Nicaragua",
+    "MZ": "Mozambique",
+    "DM": "Dominica",
+    "PM": "Saint Pierre and Miquelon",
+    "EH": "Western Sahara",
+    "GS": "South Georgia and the South Sandwich Islands",
+    "SR": "Suriname",
+    "SM": "San Marino",
+    "CI": "Cote d'Ivoire",
+    "BH": "Bahrain",
+    "IM": "Isle of Man",
+    "MG": "Madagascar",
+    "NP": "Nepal",
+    "SH": "Saint Helena, Ascension and Tristan da Cunha",
+    "CW": "Curaçao",
+    "BL": "Saint Barthélemy",
+    "MO": "Macao",
+    "TD": "Chad",
+    "GD": "Grenada",
+    "NE": "Niger",
+    "ET": "Ethiopia",
+    "CK": "Cook Islands",
+    "SN": "Senegal",
+    "ST": "Sao Tome and Principe",
+    "BM": "Bermuda",
+    "GG": "Guernsey",
+    "SJ": "Svalbard and Jan Mayen",
+    "CV": "Cabo Verde",
+    "GQ": "Equatorial Guinea",
+    "LR": "Liberia",
+    "NR": "Nauru",
+    "BQ": "Bonaire, Sint Eustatius and Saba",
+    "MT": "Malta",
+    "VA": "Vatican City",
+    "PN": "Pitcairn",
+    "GY": "Guyana",
+    "MS": "Montserrat",
+    "MP": "Northern Mariana Islands",
+    "FK": "Falkland Islands (Malvinas)",
+    "SX": "Sint Maarten (Dutch part)",
+    "VG": "Virgin Islands, British",
+    "WF": "Wallis and Futuna",
+    "GU": "Guam",
+    "TV": "Tuvalu",
+    "KG": "Kyrgyzstan",
+    "UM": "United States Minor Outlying Islands",
+    "CX": "Christmas Island",
+    "AQ": "Antarctica"
+  },
+  "leftOutCredential": 4,
+  "leftOutListing": 0,
+  "left_out_by_reason": {
+    "listing page, not a data call": 0,
+    "credential in the address": 4,
+    "private or local address": 0,
+    "email-like address": 18,
+    "survey form layer": 2800,
+    "camera or image URL": 0,
+    "stored-login proxy": 2,
+    "class-exercise copy": 0,
+    "editable layer": 31,
+    "police stop records": 75,
+    "form answer layer": 394,
+    "needs an Indian network location": 0,
+    "leak check match": 0,
+    "coursework layer": 7444,
+    "public input layer": 349,
+    "personal records layer": 28,
+    "service name like a class layer or a person": 0,
+    "social network server information": 85,
+    "another address of a left-out layer": 5,
+    "teaching organisation": 367,
+    "class account organisation": 7370,
+    "class set layer": 1175,
+    "university, college or school organisation": 14557,
+    "repeated address": 154,
+    "address already in an earlier pack": 0,
+    "layer already in an earlier pack": 0,
+    "second address form of a layer": 0
+  },
+  "leftOutExcluded": 1532,
+  "left_out_by_rule": [
+    {
+      "rule": "title matches /trafficking/i",
+      "text": "rows whose title mentions trafficking (crime statistics tagged traffic, not transit)",
+      "rows": 76
+    },
+    {
+      "rule": "subcategory contains \"wetlands\"",
+      "text": "rows whose subcategory mentions wetlands (map layers of wetlands, not transport)",
+      "rows": 1456
+    }
+  ],
+  "sample_rows": 1000,
+  "focus_rows": 85574,
+  "arcgis_online_rows": 63909,
+  "subcategories": {},
+  "agent_formats": [
+    "json"
+  ],
+  "largestServices": [
+    {
+      "service": "data.gov.ro",
+      "display": "data.gov.ro",
+      "host": "data.gov.ro",
+      "endpoints": 5335,
+      "agent_ready": 0,
+      "in_focus": 12,
+      "country_codes": 1,
+      "formats": [
+        "xml",
+        "csv"
+      ]
+    },
+    {
+      "service": "Italia Dati municipal dashboards",
+      "display": "Italia Dati municipal dashboards",
+      "host": "cruscotto-italia.dati.gov.it",
+      "endpoints": 3513,
+      "agent_ready": 2200,
+      "in_focus": 5,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "geojson",
+        "csv"
+      ]
+    },
+    {
+      "service": "Tokyo Open Data CKAN portal",
+      "display": "Tokyo Open Data CKAN portal",
+      "host": "www.opendata.metro.tokyo.lg.jp",
+      "endpoints": 3478,
+      "agent_ready": 3,
+      "in_focus": 0,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "geojson",
+        "txt",
+        "json",
+        "zip",
+        "xml"
+      ]
+    },
+    {
+      "service": "Tokyo Open Data CKAN portal",
+      "display": "Tokyo Open Data CKAN portal",
+      "host": "catalog.data.metro.tokyo.lg.jp",
+      "endpoints": 3474,
+      "agent_ready": 3474,
+      "in_focus": 0,
+      "country_codes": 1,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "istp.data.md.gov.cz",
+      "display": "istp.data.md.gov.cz",
+      "host": "istp.data.md.gov.cz",
+      "endpoints": 2710,
+      "agent_ready": 0,
+      "in_focus": 0,
+      "country_codes": 1,
+      "formats": [
+        "csv"
+      ]
+    },
+    {
+      "service": "Nextbike",
+      "display": "Nextbike",
+      "host": "gbfs.nextbike.net",
+      "endpoints": 2662,
+      "agent_ready": 2376,
+      "in_focus": 2662,
+      "country_codes": 21,
+      "formats": [
+        "json",
+        "geojson"
+      ]
+    },
+    {
+      "service": "Bast",
+      "display": "Bast",
+      "host": "www.bast.de",
+      "endpoints": 2623,
+      "agent_ready": 0,
+      "in_focus": 745,
+      "country_codes": 1,
+      "formats": [
+        "zip"
+      ]
+    },
+    {
+      "service": "Statistics Norway PxWeb",
+      "display": "Statistics Norway PxWeb",
+      "host": "data.ssb.no",
+      "endpoints": 2371,
+      "agent_ready": 2371,
+      "in_focus": 761,
+      "country_codes": 1,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "Tfl",
+      "display": "Tfl",
+      "host": "api.tfl.gov.uk",
+      "endpoints": 2257,
+      "agent_ready": 2257,
+      "in_focus": 2235,
+      "country_codes": 1,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "Transparenzportal Hamburg",
+      "display": "Transparenzportal Hamburg",
+      "host": "archiv.transparenz.hamburg.de",
+      "endpoints": 2081,
+      "agent_ready": 194,
+      "in_focus": 95,
+      "country_codes": 1,
+      "formats": [
+        "xml",
+        "json",
+        "zip",
+        "csv",
+        "txt"
+      ]
+    },
+    {
+      "service": "Lombardia",
+      "display": "Lombardia",
+      "host": "www.dati.lombardia.it",
+      "endpoints": 1967,
+      "agent_ready": 884,
+      "in_focus": 594,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "xml",
+        "csv",
+        "geojson"
+      ]
+    },
+    {
+      "service": "tabular-api.data.gouv.fr",
+      "display": "tabular-api.data.gouv.fr",
+      "host": "tabular-api.data.gouv.fr",
+      "endpoints": 1932,
+      "agent_ready": 1931,
+      "in_focus": 393,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "csv"
+      ]
+    },
+    {
+      "service": "Eurostat dissemination API",
+      "display": "Eurostat dissemination API",
+      "host": "ec.europa.eu",
+      "endpoints": 1786,
+      "agent_ready": 890,
+      "in_focus": 890,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "csv",
+        "txt"
+      ]
+    },
+    {
+      "service": "Nantesmetropole",
+      "display": "Nantesmetropole",
+      "host": "data.nantesmetropole.fr",
+      "endpoints": 1744,
+      "agent_ready": 1070,
+      "in_focus": 55,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "csv",
+        "geojson",
+        "zip"
+      ]
+    },
+    {
+      "service": "Donkey",
+      "display": "Donkey",
+      "host": "stables.donkey.bike",
+      "endpoints": 1736,
+      "agent_ready": 1736,
+      "in_focus": 1735,
+      "country_codes": 13,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "Tokyo Open Data CKAN portal",
+      "display": "Tokyo Open Data CKAN portal",
+      "host": "www.toukei.metro.tokyo.lg.jp",
+      "endpoints": 1407,
+      "agent_ready": 0,
+      "in_focus": 0,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "txt"
+      ]
+    },
+    {
+      "service": "Górnośląsko-Zagłębiowska Metropolia open",
+      "display": "Górnośląsko-Zagłębiowska Metropolia open",
+      "host": "otwartedane.metropoliagzm.pl",
+      "endpoints": 1317,
+      "agent_ready": 1313,
+      "in_focus": 0,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "csv"
+      ]
+    },
+    {
+      "service": "Destatis GENESIS (Germany)",
+      "display": "Destatis GENESIS (Germany)",
+      "host": "genesis.destatis.de",
+      "endpoints": 1240,
+      "agent_ready": 0,
+      "in_focus": 153,
+      "country_codes": 1,
+      "formats": [
+        "txt",
+        "xml"
+      ]
+    },
+    {
+      "service": "Bird",
+      "display": "Bird",
+      "host": "mds.bird.co",
+      "endpoints": 1237,
+      "agent_ready": 1224,
+      "in_focus": 1237,
+      "country_codes": 12,
+      "formats": [
+        "json",
+        "geojson"
+      ]
+    },
+    {
+      "service": "Digitraffic",
+      "display": "Digitraffic",
+      "host": "rata.digitraffic.fi",
+      "endpoints": 1181,
+      "agent_ready": 1181,
+      "in_focus": 1181,
+      "country_codes": 2,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "Bayareametro",
+      "display": "Bayareametro",
+      "host": "data.bayareametro.gov",
+      "endpoints": 1166,
+      "agent_ready": 1166,
+      "in_focus": 38,
+      "country_codes": 1,
+      "formats": [
+        "json"
+      ]
+    },
+    {
+      "service": "api.mobidata-bw.de",
+      "display": "api.mobidata-bw.de",
+      "host": "api.mobidata-bw.de",
+      "endpoints": 1123,
+      "agent_ready": 1050,
+      "in_focus": 1108,
+      "country_codes": 3,
+      "formats": [
+        "json",
+        "geojson",
+        "csv",
+        "xml"
+      ]
+    },
+    {
+      "service": "Digitraffic",
+      "display": "Digitraffic",
+      "host": "meri.digitraffic.fi",
+      "endpoints": 1122,
+      "agent_ready": 696,
+      "in_focus": 0,
+      "country_codes": 1,
+      "formats": [
+        "json",
+        "geojson"
+      ]
+    },
+    {
+      "service": "region.statistik-nord.de",
+      "display": "region.statistik-nord.de",
+      "host": "region.statistik-nord.de",
+      "endpoints": 1054,
+      "agent_ready": 0,
+      "in_focus": 357,
+      "country_codes": 1,
+      "formats": [
+        "txt",
+        "csv"
+      ]
+    },
+    {
+      "service": "Tokyo Open Data CKAN portal",
+      "display": "Tokyo Open Data CKAN portal",
+      "host": "www.toshiseibi.metro.tokyo.lg.jp",
+      "endpoints": 1020,
+      "agent_ready": 0,
+      "in_focus": 0,
+      "country_codes": 1,
+      "formats": [
+        "csv",
+        "txt"
+      ]
+    }
+  ],
+  "bannerGroups": [
+    {
+      "label": "US",
+      "n": 90776,
+      "agent": 85839
+    },
+    {
+      "label": "DE",
+      "n": 26527,
+      "agent": 8618
+    },
+    {
+      "label": "FR",
+      "n": 15747,
+      "agent": 11127
+    },
+    {
+      "label": "JP",
+      "n": 13594,
+      "agent": 3701
+    },
+    {
+      "label": "IT",
+      "n": 12726,
+      "agent": 5011
+    },
+    {
+      "label": "GB",
+      "n": 10532,
+      "agent": 8155
+    }
+  ],
+  "focus_text": "category in (\"Transport & Mobility\", \"Navigation & Geo/Maps\") AND NOT title matches /trafficking/i AND title matches /\\b(bus|buses|rail|railway|train|trains|tram|metro|subway|transit|bike|bikes|bicycle|cycle|cycling|scooter|scooters|gbfs|gtfs|parking|car park|traffic|road|roads|stop|stops|route|routes|transport|mobility|ferry|line|lines|velo|vélo|verkehr|bahn|trafic|stationnement|réseau|sharing|journey|station_status|station_information|system_information)\\b/i",
+  "buckets": [
+    {
+      "id": "agent",
+      "emoji": "🤖",
+      "name": "Agent tools",
+      "title": "GBFS bike and scooter feeds",
+      "build": "Wrap a GBFS station_status URL as a get_bike_availability tool: pass the system and station, return bikes and docks.",
+      "filter": {
+        "and": [
+          {
+            "tag": "agent-ready"
+          },
+          {
+            "or": [
+              {
+                "tag": "gbfs"
+              },
+              {
+                "tag": "bike-share"
+              }
+            ]
+          }
+        ]
+      },
+      "filter_text": "tags has agent-ready AND (tags has gbfs OR tags has bike-share)",
+      "fallback": false,
+      "notes": [
+        {
+          "count": 3257,
+          "text": "are availability feeds (`station_status`, `free_bike_status` or `vehicle_status`); the others are feeds such as system information, vehicle types and pricing plans."
+        }
+      ],
+      "count": 16074,
+      "services_matching": 265,
+      "country_codes_matching": 60,
+      "formats_matching": 1,
+      "example": {
+        "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_aa/en/station_status.json",
+        "title": "GBFS station_status: biciArteixo (Artexio, ES)",
+        "service": "Nextbike",
+        "last_tested": "2026-11-14"
+      },
+      "recommended": {
+        "criteria": "Services in this pack with the most endpoints that match this bucket and are tagged `agent-ready` (no key sent in the test call, JSON body, passed a data call). Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: `url contains \"station_status\"`. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+        "available": 196,
+        "services": [
+          {
+            "service": "Nextbike",
+            "display": "Nextbike",
+            "host": "gbfs.nextbike.net",
+            "endpoints_in_bucket": 2376,
+            "endpoints_in_pack": 2662,
+            "country_codes": [
+              "AT",
+              "BA",
+              "BE",
+              "CH",
+              "CY",
+              "CZ",
+              "DE",
+              "ES",
+              "FR",
+              "GB",
+              "GR",
+              "HR",
+              "IT",
+              "LV",
+              "PL",
+              "PT",
+              "RO",
+              "SE",
+              "SI",
+              "SK",
+              "XK"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 2,
+            "sample_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_aa/en/station_status.json",
+            "sample_title": "GBFS station_status: biciArteixo (Artexio, ES)",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "Donkey",
+            "display": "Donkey",
+            "host": "stables.donkey.bike",
+            "endpoints_in_bucket": 1736,
+            "endpoints_in_pack": 1736,
+            "country_codes": [
+              "BE",
+              "CH",
+              "DE",
+              "DK",
+              "ES",
+              "FI",
+              "FR",
+              "GB",
+              "HU",
+              "IS",
+              "LI",
+              "NL",
+              "SE"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://stables.donkey.bike/api/public/gbfs/2/Augsburg/de/station_status.json",
+            "sample_title": "Donkey Republic Augsburg: GBFS station_status [de]: Donkey Republic Augsburg (Augsburg) v2.3",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Bird",
+            "display": "Bird",
+            "host": "mds.bird.co",
+            "endpoints_in_bucket": 1224,
+            "endpoints_in_pack": 1237,
+            "country_codes": [
+              "AT",
+              "BE",
+              "CA",
+              "CH",
+              "DE",
+              "ES",
+              "FI",
+              "FR",
+              "IL",
+              "IT",
+              "PT",
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 2,
+            "sample_url": "https://mds.bird.co/gbfs/v2/public/adeje/station_status.json",
+            "sample_title": "GBFS station_status: Bird Adeje (Adeje)",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "api.mobidata-bw.de",
+            "display": "api.mobidata-bw.de",
+            "host": "api.mobidata-bw.de",
+            "endpoints_in_bucket": 1049,
+            "endpoints_in_pack": 1123,
+            "country_codes": [
+              "CH",
+              "DE",
+              "LI"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 4,
+            "sample_url": "https://api.mobidata-bw.de/sharing/gbfs/v2/bird-chalonsenchampagne/station_status",
+            "sample_title": "MobiData BW sharing: GBFS station_status: bird-chalonsenchampagne",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Citybik",
+            "display": "Citybik",
+            "host": "api.citybik.es",
+            "endpoints_in_bucket": 813,
+            "endpoints_in_pack": 813,
+            "country_codes": [
+              "AE",
+              "AR",
+              "AT",
+              "BA",
+              "BE",
+              "BR",
+              "CA",
+              "CH",
+              "CL",
+              "CN",
+              "CO",
+              "CR",
+              "CY",
+              "CZ",
+              "DE",
+              "EC",
+              "ES",
+              "FI",
+              "FR",
+              "GB",
+              "GE",
+              "GR",
+              "HR",
+              "HU",
+              "IE",
+              "IN",
+              "IT",
+              "JP",
+              "KR",
+              "KZ",
+              "LT",
+              "LU",
+              "LV",
+              "MC",
+              "ME",
+              "MT",
+              "MX",
+              "MY",
+              "NL",
+              "NO",
+              "PE",
+              "PL",
+              "PT",
+              "RO",
+              "SA",
+              "SE",
+              "SI",
+              "SK",
+              "TR",
+              "TW",
+              "US",
+              "XK"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://api.citybik.es/v2/networks",
+            "sample_title": "CityBikes: All bike-share networks",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Getaround",
+            "display": "Getaround",
+            "host": "getaround.com",
+            "endpoints_in_bucket": 718,
+            "endpoints_in_pack": 718,
+            "country_codes": [
+              "AT",
+              "BE",
+              "DE",
+              "ES",
+              "FR",
+              "NO"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://getaround.com/gbfs/v3/aalst/system_information",
+            "sample_title": "GBFS system_information: Getaround Aalst (Aalst)",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "Fifteen",
+            "display": "Fifteen",
+            "host": "gbfs.partners.fifteen.eu",
+            "endpoints_in_bucket": 458,
+            "endpoints_in_pack": 503,
+            "country_codes": [
+              "DE",
+              "ES",
+              "FR"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 2,
+            "sample_url": "https://gbfs.partners.fifteen.eu/gbfs/2.2/angouleme/en/station_status.json",
+            "sample_title": "GBFS station_status: Vélo Modalis Angoulême (Angoulême)",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "Lyft",
+            "display": "Lyft",
+            "host": "gbfs.lyft.com",
+            "endpoints_in_bucket": 447,
+            "endpoints_in_pack": 447,
+            "country_codes": [
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://gbfs.lyft.com/gbfs/1.1/bay/en/station_status.json",
+            "sample_title": "Motivate LLC: GBFS station_status [en]: Bay Wheels (San Francisco Bay Area, CA)",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          }
+        ]
+      }
+    },
+    {
+      "id": "app",
+      "emoji": "📱",
+      "name": "App features",
+      "title": "Parking and traffic maps",
+      "build": "Show nearby parking and traffic counts on a map card.",
+      "filter": {
+        "and": [
+          {
+            "or": [
+              {
+                "tag": "parking"
+              },
+              {
+                "tag": "traffic"
+              }
+            ]
+          },
+          {
+            "category": "Transport & Mobility"
+          },
+          {
+            "not": {
+              "titleMatches": "trafficking"
+            }
+          }
+        ]
+      },
+      "filter_text": "(tags has parking OR tags has traffic) AND category is \"Transport & Mobility\" AND NOT title matches /trafficking/i",
+      "fallback": false,
+      "notes": [],
+      "count": 30018,
+      "services_matching": 4175,
+      "country_codes_matching": 75,
+      "formats_matching": 6,
+      "example": {
+        "url": "https://rata.digitraffic.fi/api/v1/live-trains/station/%C3%84HT?arrived_trains=0&arriving_trains=10&departed_trains=0&departing_trains=10",
+        "title": "Finnish rail live trains: Ähtäri",
+        "service": "Digitraffic",
+        "last_tested": "2026-11-14"
+      },
+      "recommended": {
+        "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+        "available": 2724,
+        "services": [
+          {
+            "service": "Transparenzportal Hamburg",
+            "display": "Transparenzportal Hamburg",
+            "host": "archiv.transparenz.hamburg.de",
+            "endpoints_in_bucket": 1259,
+            "endpoints_in_pack": 2081,
+            "country_codes": [
+              "DE"
+            ],
+            "formats": [
+              "xml",
+              "json",
+              "csv",
+              "zip",
+              "txt"
+            ],
+            "formats_in_pack": 5,
+            "sample_url": "https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/datastreams_255693_snap_27.JSON",
+            "sample_title": "Traffic Lights Data Hamburg",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Digitraffic",
+            "display": "Digitraffic",
+            "host": "rata.digitraffic.fi",
+            "endpoints_in_bucket": 1181,
+            "endpoints_in_pack": 1181,
+            "country_codes": [
+              "FI",
+              "SE"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://rata.digitraffic.fi/api/v1/live-trains/station/%C3%84HT?arrived_trains=0&arriving_trains=10&departed_trains=0&departing_trains=10",
+            "sample_title": "Finnish rail live trains: Ähtäri",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "region.statistik-nord.de",
+            "display": "region.statistik-nord.de",
+            "host": "region.statistik-nord.de",
+            "endpoints_in_bucket": 1036,
+            "endpoints_in_pack": 1054,
+            "country_codes": [
+              "DE"
+            ],
+            "formats": [
+              "txt",
+              "csv"
+            ],
+            "formats_in_pack": 2,
+            "sample_url": "https://region.statistik-nord.de/detail_timelineexport/12/1101/31/1/341/",
+            "sample_title": "Settlement and traffic areas by type of use groups in Flensburg",
+            "sample_format": "txt",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "Toscana",
+            "display": "Toscana",
+            "host": "dati.toscana.it",
+            "endpoints_in_bucket": 947,
+            "endpoints_in_pack": 998,
+            "country_codes": [
+              "IT"
+            ],
+            "formats": [
+              "csv",
+              "txt"
+            ],
+            "formats_in_pack": 5,
+            "sample_url": "https://dati.toscana.it/dataset/0069ab3b-4c26-4d72-9c8e-358180567f23/resource/4fa6f353-42cc-4876-a363-2ad69b944950/download/sgc-fi-pi-li-a12-a11-livorno-ss1-uscita-direzione-firenze_110_2025.csv",
+            "sample_title": "Region of Tuscany - SGCFIPILI - Station P110 - km 76-release - Traffic monitoring system",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Villingen Schwenningen",
+            "display": "Villingen Schwenningen",
+            "host": "apps.villingen-schwenningen.de",
+            "endpoints_in_bucket": 946,
+            "endpoints_in_pack": 968,
+            "country_codes": [
+              "DE"
+            ],
+            "formats": [
+              "xml"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://apps.villingen-schwenningen.de/mapservervs/getcapbplan.php?map=S_B_1879.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities",
+            "sample_title": "S - Village Building Line Plan / S_B _1879",
+            "sample_format": "xml",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "Hamburg",
+            "display": "Hamburg",
+            "host": "tld.iot.hamburg.de",
+            "endpoints_in_bucket": 832,
+            "endpoints_in_pack": 836,
+            "country_codes": [
+              "DE"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://tld.iot.hamburg.de/v1.1/Datastreams(10)/Observations?$top=10",
+            "sample_title": "Freie und Hansestadt Hamburg traffic lights data (TLD): OGC SensorThings API",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Destatis GENESIS (Germany)",
+            "display": "Destatis GENESIS (Germany)",
+            "host": "genesis.destatis.de",
+            "endpoints_in_bucket": 662,
+            "endpoints_in_pack": 1240,
+            "country_codes": [
+              "DE"
+            ],
+            "formats": [
+              "txt",
+              "xml"
+            ],
+            "formats_in_pack": 2,
+            "sample_url": "https://genesis.destatis.de/genesisWS/downloads/00/tables/33111-0003_00.xml",
+            "sample_title": "Settlement and traffic area: Germany, cut-off date (until 31.12.2015), types of use (AdV list of types of use 1991)",
+            "sample_format": "xml",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "maps2.dcgis.dc.gov",
+            "display": "maps2.dcgis.dc.gov",
+            "host": "maps2.dcgis.dc.gov",
+            "endpoints_in_bucket": 489,
+            "endpoints_in_pack": 707,
+            "country_codes": [
+              "US"
+            ],
+            "formats": [
+              "json"
+            ],
+            "formats_in_pack": 1,
+            "sample_url": "https://maps2.dcgis.dc.gov/DCGIS/rest/services/DCGIS_DATA/Transportation_Parking_WebMercator/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+            "sample_title": "Parking Blockface",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          }
+        ]
+      }
+    },
+    {
+      "id": "grounding",
+      "emoji": "🧠",
+      "name": "Grounding and data pipelines",
+      "title": "GTFS feeds and CSV tables for scheduled loads",
+      "build": "Load GTFS timetables and CSV tables on a schedule into your own store.",
+      "filter": {
+        "or": [
+          {
+            "tag": "gtfs"
+          },
+          {
+            "format": [
+              "csv"
+            ]
+          }
+        ]
+      },
+      "filter_text": "tags has gtfs OR format is csv",
+      "fallback": false,
+      "notes": [
+        {
+          "count": 1148,
+          "text": "carry the gtfs tag; the others are CSV tables."
+        }
+      ],
+      "count": 38416,
+      "services_matching": 1352,
+      "country_codes_matching": 165,
+      "formats_matching": 6,
+      "example": {
+        "url": "https://proxy.transport.data.gouv.fr/resource/agglobus-bourges-gtfs-rt-alerts",
+        "title": "Réseau urbain AggloBus - GTFS RT alerts Bourges Agglobus",
+        "service": "proxy.transport.data.gouv.fr",
+        "last_tested": "2026-11-14"
+      },
+      "recommended": {
+        "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: `format is gtfs AND NOT url contains \"action-report.json\"`. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+        "available": 769,
+        "services": [
+          {
+            "service": "Toscana",
+            "display": "Toscana",
+            "host": "dati.toscana.it",
+            "endpoints_in_bucket": 991,
+            "endpoints_in_pack": 998,
+            "country_codes": [
+              "IT"
+            ],
+            "formats": [
+              "csv"
+            ],
+            "formats_in_pack": 5,
+            "sample_url": "https://dati.toscana.it/dataset/0069ab3b-4c26-4d72-9c8e-358180567f23/resource/4fa6f353-42cc-4876-a363-2ad69b944950/download/sgc-fi-pi-li-a12-a11-livorno-ss1-uscita-direzione-firenze_110_2025.csv",
+            "sample_title": "Region of Tuscany - SGCFIPILI - Station P110 - km 76-release - Traffic monitoring system",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Metropolegrenoble",
+            "display": "Metropolegrenoble",
+            "host": "data.metropolegrenoble.fr",
+            "endpoints_in_bucket": 928,
+            "endpoints_in_pack": 973,
+            "country_codes": [
+              "FR"
+            ],
+            "formats": [
+              "csv"
+            ],
+            "formats_in_pack": 5,
+            "sample_url": "https://data.metropolegrenoble.fr/sites/default/files/dataset/2022/06/27/85c1dc61-04a0-4bf2-9042-ab54b945ab78/csv_gen_85c1dc61_04a0_4bf2_9042_ab54b945ab78_62b9ab80f3fd6.csv",
+            "sample_title": "Grenoble-Alpes Métropole: Arceaux à vélo sur le territoire de Grenoble / arceaux_epsg4326.csv",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Nantesmetropole",
+            "display": "Nantesmetropole",
+            "host": "data.nantesmetropole.fr",
+            "endpoints_in_bucket": 593,
+            "endpoints_in_pack": 1744,
+            "country_codes": [
+              "FR"
+            ],
+            "formats": [
+              "csv",
+              "json"
+            ],
+            "formats_in_pack": 4,
+            "sample_url": "https://data.nantesmetropole.fr/api/explore/v2.1/catalog/datasets/244400404_ligne-covoiturage-covoitici-nantes-metropole-gtfs/records?limit=1",
+            "sample_title": "244400404_ligne-covoiturage-covoitici-nantes-metropole-gtfs",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-12"
+          },
+          {
+            "service": "Eurostat dissemination API",
+            "display": "Eurostat dissemination API",
+            "host": "ec.europa.eu",
+            "endpoints_in_bucket": 463,
+            "endpoints_in_pack": 1786,
+            "country_codes": [
+              "EU"
+            ],
+            "formats": [
+              "csv"
+            ],
+            "formats_in_pack": 3,
+            "sample_url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/avia_goexcc?format=SDMX-CSV&compressed=true",
+            "sample_title": "International extra-EU freight and mail air transport between reporting and partner world regions and countries by type of schedule (from 2008 and onwards)",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "Stadt Zürich Open Data",
+            "display": "Stadt Zürich Open Data",
+            "host": "data.stadt-zuerich.ch",
+            "endpoints_in_bucket": 460,
+            "endpoints_in_pack": 505,
+            "country_codes": [
+              "CH"
+            ],
+            "formats": [
+              "csv"
+            ],
+            "formats_in_pack": 2,
+            "sample_url": "https://data.stadt-zuerich.ch/dataset/bev_zuz_jahr_quartier_od3511/download/BEV351OD3511.csv",
+            "sample_title": "Trains from abroad to the place of arrival and the city quarter",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "Ireland Open Data Portal",
+            "display": "Ireland Open Data Portal",
+            "host": "ws.cso.ie",
+            "endpoints_in_bucket": 446,
+            "endpoints_in_pack": 881,
+            "country_codes": [
+              "IE"
+            ],
+            "formats": [
+              "csv"
+            ],
+            "formats_in_pack": 2,
+            "sample_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/CEPHA29/CSV/1.0/en",
+            "sample_title": "CEPHA29 - Total Commodities Conveyed by Freight Trains",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "Lombardia",
+            "display": "Lombardia",
+            "host": "www.dati.lombardia.it",
+            "endpoints_in_bucket": 430,
+            "endpoints_in_pack": 1967,
+            "country_codes": [
+              "IT"
+            ],
+            "formats": [
+              "csv",
+              "json"
+            ],
+            "formats_in_pack": 4,
+            "sample_url": "https://www.dati.lombardia.it/resource/yqye-t4rp.json?$limit=1",
+            "sample_title": "Orario Ferroviario Regionale - Routes",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "opendata.essen.de",
+            "display": "opendata.essen.de",
+            "host": "opendata.essen.de",
+            "endpoints_in_bucket": 398,
+            "endpoints_in_pack": 402,
+            "country_codes": [
+              "DE"
+            ],
+            "formats": [
+              "csv"
+            ],
+            "formats_in_pack": 3,
+            "sample_url": "https://opendata.essen.de/sites/default/files/Radverkehrsz%C3%A4hlung%202023_3.csv",
+            "sample_title": "Cycling censuses",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evals",
+      "emoji": "🧪",
+      "name": "Evals and testing",
+      "title": "Varied responses for tool-call tests",
+      "build": "Run your tool calls against a fixed set of URLs across formats and record which answer; last_tested is the baseline for your own re-tests.",
+      "filter": {
+        "whole": true
+      },
+      "filter_text": "the whole pack",
+      "fallback": false,
+      "notes": [],
+      "count": 249684,
+      "services_matching": 14126,
+      "country_codes_matching": 249,
+      "formats_matching": 7,
+      "example": {
+        "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_aa/en/free_bike_status.json",
+        "title": "GBFS free_bike_status: biciArteixo (Artexio, ES)",
+        "service": "Nextbike",
+        "last_tested": "2026-11-14"
+      },
+      "recommended": {
+        "criteria": "Services in this pack that returned the most different formats, then the most endpoints that passed a data call, then by name: a mix of response shapes to test parsers and tool calls. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+        "available": 7491,
+        "services": [
+          {
+            "service": "Портал відкритих даних",
+            "display": "Портал відкритих даних",
+            "host": "data.gov.ua",
+            "endpoints_in_bucket": 455,
+            "endpoints_in_pack": 455,
+            "country_codes": [
+              "UA"
+            ],
+            "formats": [
+              "csv",
+              "json",
+              "zip",
+              "xml",
+              "txt",
+              "geojson"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://data.gov.ua/dataset/0731fd5d-3123-42fa-ac19-4008a25a40aa/resource/f3c07f9f-1d93-4098-926e-7efcce96bc86/download/roads-csv.json",
+            "sample_title": "Дані щодо ремонту автомобільних доріг місцевого значення Кельменецької селищної ради - roads.csv.json",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Dublinked Open Data for the Dublin Regio",
+            "display": "Dublinked Open Data for the Dublin Regio",
+            "host": "data.smartdublin.ie",
+            "endpoints_in_bucket": 346,
+            "endpoints_in_pack": 346,
+            "country_codes": [
+              "IE"
+            ],
+            "formats": [
+              "csv",
+              "json",
+              "geojson",
+              "xml",
+              "zip",
+              "txt"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://data.smartdublin.ie/dataset/0400ca4b-6f92-4884-a0b6-f1661d5613c3/resource/bb7532e7-e45b-49b4-97dc-7f59eb1c3177/download/gritting-routes-dlr.geojson",
+            "sample_title": "Gritting Routes DLR",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          },
+          {
+            "service": "Canadian Urban Data Catalogue (CUDC)",
+            "display": "Canadian Urban Data Catalogue (CUDC)",
+            "host": "www.donneesquebec.ca",
+            "endpoints_in_bucket": 248,
+            "endpoints_in_pack": 248,
+            "country_codes": [
+              "CA"
+            ],
+            "formats": [
+              "csv",
+              "xml",
+              "json",
+              "geojson",
+              "zip",
+              "txt"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://www.donneesquebec.ca/recherche/dataset/099d789b-fd45-40ab-9a22-2f94a9500548/resource/7574e7f5-197c-4a95-b10c-b6da9b759bfa/download/stationnement.json",
+            "sample_title": "Parking areas",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Canadian Urban Data Catalogue (CUDC)",
+            "display": "Canadian Urban Data Catalogue (CUDC)",
+            "host": "donnees.montreal.ca",
+            "endpoints_in_bucket": 102,
+            "endpoints_in_pack": 102,
+            "country_codes": [
+              "CA"
+            ],
+            "formats": [
+              "csv",
+              "json",
+              "geojson",
+              "txt",
+              "xml",
+              "zip"
+            ],
+            "formats_in_pack": 6,
+            "sample_url": "https://donnees.montreal.ca/dataset/02ebdab9-cbf3-4f56-8c29-79fa0ed0ed2e/resource/af3fd28f-19ee-4c80-b8d9-29f17f18620d/download/feux-circulation.geojson",
+            "sample_title": "Traffic lights - locations all intersections - Traffic lights",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Transparenzportal Hamburg",
+            "display": "Transparenzportal Hamburg",
+            "host": "archiv.transparenz.hamburg.de",
+            "endpoints_in_bucket": 2081,
+            "endpoints_in_pack": 2081,
+            "country_codes": [
+              "DE"
+            ],
+            "formats": [
+              "xml",
+              "json",
+              "zip",
+              "csv",
+              "txt"
+            ],
+            "formats_in_pack": 5,
+            "sample_url": "https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/datastreams_255693_snap_27.JSON",
+            "sample_title": "Traffic Lights Data Hamburg",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Toscana",
+            "display": "Toscana",
+            "host": "dati.toscana.it",
+            "endpoints_in_bucket": 998,
+            "endpoints_in_pack": 998,
+            "country_codes": [
+              "IT"
+            ],
+            "formats": [
+              "csv",
+              "xml",
+              "txt",
+              "geojson",
+              "zip"
+            ],
+            "formats_in_pack": 5,
+            "sample_url": "https://dati.toscana.it/dataset/0069ab3b-4c26-4d72-9c8e-358180567f23/resource/4fa6f353-42cc-4876-a363-2ad69b944950/download/sgc-fi-pi-li-a12-a11-livorno-ss1-uscita-direzione-firenze_110_2025.csv",
+            "sample_title": "Region of Tuscany - SGCFIPILI - Station P110 - km 76-release - Traffic monitoring system",
+            "sample_format": "csv",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "Metropolegrenoble",
+            "display": "Metropolegrenoble",
+            "host": "data.metropolegrenoble.fr",
+            "endpoints_in_bucket": 973,
+            "endpoints_in_pack": 973,
+            "country_codes": [
+              "FR"
+            ],
+            "formats": [
+              "csv",
+              "xml",
+              "geojson",
+              "json",
+              "txt"
+            ],
+            "formats_in_pack": 5,
+            "sample_url": "https://data.metropolegrenoble.fr/sites/default/files/dataset/2022/06/27/85c1dc61-04a0-4bf2-9042-ab54b945ab78/arceaux_epsg4326.json",
+            "sample_title": "Grenoble-Alpes Métropole: Arceaux à vélo sur le territoire de Grenoble / arceaux_epsg4326.json",
+            "sample_format": "geojson",
+            "sample_last_tested": "2026-11-15"
+          },
+          {
+            "service": "ArcGIS Online: Helsingin Seudun Liikenteen (HSL) kaupunkipyöräasemat",
+            "display": "ArcGIS Online: Helsingin Seudun Liikenteen (HSL) kaupunkipyöräasemat",
+            "host": "opendata.arcgis.com",
+            "endpoints_in_bucket": 557,
+            "endpoints_in_pack": 557,
+            "country_codes": [
+              "AU",
+              "CA",
+              "FI",
+              "GB",
+              "IE",
+              "NL",
+              "SE"
+            ],
+            "formats": [
+              "xml",
+              "csv",
+              "geojson",
+              "json",
+              "zip"
+            ],
+            "formats_in_pack": 5,
+            "sample_url": "https://opendata.arcgis.com/datasets/27b68252764f4d7b8ec040ff44481dbe_0.geojson",
+            "sample_title": "Helsinki Region Transport (HSL) frequencies",
+            "sample_format": "json",
+            "sample_last_tested": "2026-11-14"
+          }
+        ]
+      }
+    }
+  ],
+  "questions": [
+    {
+      "q": "How many bikes and open docks does a bike-share station report?",
+      "filter": "url contains \"station_status\"",
+      "url": "https://abmitlara.de/wp-json/commonsbooking/v1/station_status.json",
+      "title": "GBFS station_status: AB mit Lara (Aschaffenburg)",
+      "service": "Abmitlara",
+      "last_tested": "2026-11-14",
+      "matching": 1683
+    },
+    {
+      "q": "What is the current status of a London bus route?",
+      "filter": "url matches /api\\.tfl\\.gov\\.uk/Line/[^/]+/Status/i",
+      "url": "https://api.tfl.gov.uk/Line/1/Status",
+      "title": "TfL line status: bus 1",
+      "service": "Tfl",
+      "last_tested": "2026-11-14",
+      "matching": 724
+    },
+    {
+      "q": "Which trains arrive at and leave a Finnish rail station next?",
+      "filter": "url contains \"rata.digitraffic.fi/api/v1/live-trains/station\"",
+      "url": "https://rata.digitraffic.fi/api/v1/live-trains/station/%C3%84HT?arrived_trains=0&arriving_trains=10&departed_trains=0&departing_trains=10",
+      "title": "Finnish rail live trains: Ähtäri",
+      "service": "Digitraffic",
+      "last_tested": "2026-11-14",
+      "matching": 202
+    }
+  ],
+  "preview_focused": true,
+  "preview": [
+    {
+      "title": "GBFS free_bike_status: biciArteixo (Artexio, ES)",
+      "service": "Nextbike",
+      "country": "ES",
+      "category": "Transport & Mobility",
+      "subcategory": "",
+      "format": "json",
+      "tags": "transit|bike-share|gbfs|maps|no-key|json|agent-ready",
+      "last_tested": "2026-11-14",
+      "host": "gbfs.nextbike.net",
+      "url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_aa/en/free_bike_status.json"
+    },
+    {
+      "title": "Transport for London: TfL bus 1 line detail",
+      "service": "Tfl",
+      "country": "GB",
+      "category": "Transport & Mobility",
+      "subcategory": "",
+      "format": "json",
+      "tags": "transit|no-key|json|agent-ready",
+      "last_tested": "2026-11-15",
+      "host": "api.tfl.gov.uk",
+      "url": "https://api.tfl.gov.uk/Line/1"
+    },
+    {
+      "title": "Donkey Republic Augsburg: GBFS free_bike_status [de]: Donkey Republic Augsburg (Augsburg) v2.3",
+      "service": "Donkey",
+      "country": "DE",
+      "category": "Transport & Mobility",
+      "subcategory": "",
+      "format": "json",
+      "tags": "transit|bike-share|gbfs|no-key|json|agent-ready",
+      "last_tested": "2026-11-15",
+      "host": "stables.donkey.bike",
+      "url": "https://stables.donkey.bike/api/public/gbfs/2/Augsburg/de/free_bike_status.json"
+    },
+    {
+      "title": "Bird Ajaccio: GBFS free_bike_status [en]: Bird Ajaccio (Ajaccio) v1.1",
+      "service": "Bird",
+      "country": "FR",
+      "category": "Transport & Mobility",
+      "subcategory": "",
+      "format": "json",
+      "tags": "transit|bike-share|gbfs|no-key|json|agent-ready",
+      "last_tested": "2026-11-15",
+      "host": "mds.bird.co",
+      "url": "https://mds.bird.co/gbfs/ajaccio/free_bike_status.json"
+    },
+    {
+      "title": "Finnish rail live trains: Ähtäri",
+      "service": "Digitraffic",
+      "country": "FI",
+      "category": "Transport & Mobility",
+      "subcategory": "",
+      "format": "json",
+      "tags": "transit|traffic|no-key|json|agent-ready",
+      "last_tested": "2026-11-14",
+      "host": "rata.digitraffic.fi",
+      "url": "https://rata.digitraffic.fi/api/v1/live-trains/station/%C3%84HT?arrived_trains=0&arriving_trains=10&departed_trains=0&departing_trains=10"
+    }
+  ],
+  "limits": [
+    {
+      "id": "skew",
+      "text": "36.4% of rows carry country code US; 9,338 rows have no code (global or unknown)."
+    },
+    {
+      "id": "stats-meta",
+      "text": "5,010 rows come from PxWeb or Statistics Canada services. Some statistics endpoints return metadata or a pointer on GET; the table may need a second request or a POST."
+    },
+    {
+      "id": "erddap-info",
+      "text": "50 rows are ERDDAP /info/ pages: they describe a dataset rather than return its values, so the series needs a second request."
+    },
+    {
+      "id": "record-count",
+      "text": "94,130 rows are map-layer queries with resultRecordCount set: the tested call asked for a few records; change the query to get the full layer."
+    },
+    {
+      "id": "limit-1",
+      "text": "9,125 rows carry limit=1: the tested call asked for one record; raise the limit or page through."
+    },
+    {
+      "id": "portal",
+      "text": "8,615 rows are open-data portal dataset records, which may return a dataset record with links rather than the table itself."
+    },
+    {
+      "id": "files",
+      "text": "7,704 rows are files (zip 4,807, txt 2,897) rather than bodies an agent reads directly."
+    },
+    {
+      "id": "roots",
+      "text": "8 rows are service root addresses (the host alone or an API or version path such as /v1, with no query), which may describe the service rather than return data; the sample, examples and recommended lists use other rows first."
+    },
+    {
+      "id": "arcgis-online",
+      "text": "63,909 rows are layers on ArcGIS Online, where anyone can publish: some are class projects, tests or copies. Check the owner and the fields before you rely on one."
+    },
+    {
+      "id": "app-name",
+      "text": "5 URLs carry `application=AgentPopulation`; set your own application name when you call them."
+    },
+    {
+      "id": "quiet",
+      "text": "Stations and feeds can go quiet after their test date; re-test a URL before you rely on it."
+    },
+    {
+      "id": "not-in",
+      "text": "Not in this pack: endpoints that need a key or a POST, and URLs that did not pass."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 4 rows whose URL carried a credential-looking parameter or a login."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 18 rows with an email-like address."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 2,800 ArcGIS Survey123 layers (they can hold people's form answers)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 2 ArcGIS proxy layers (utility.arcgis.com/usrsvcs and portal /sharing/servers/ addresses) that can call a service with a stored login."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 31 layers marked editable in the title (they can hold entries that people added)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 75 police traffic-stop layers (they can hold details of people stopped)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 394 ArcGIS layers that keep a form's default service name (they can hold people's form answers)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 7,444 ArcGIS class or coursework layers (lab, assignment, exam, quiz, lesson, exercise, tutorial and final-project layers, copies of class layers, layers named for a person or a person's home, and layers whose name ends in a person's name or holds a student number)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 349 ArcGIS layers that hold reports, comments, submissions or form responses sent in by the public."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 28 ArcGIS layers that are records about named people (employee, patient, client or donor lists, home addresses, voter lists, sex offender and missing person layers)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 85 rows of server information from Mastodon, PeerTube, Lemmy, Nostr and other social network servers (instance documents name the server's contact person)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 5 rows that are another address of an ArcGIS layer dropped for what it holds (one of the reasons above, found under another address of the layer)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 367 rows of ArcGIS Online organisations that are class accounts (25 layers or more, at least 50% of them class or coursework layers): their other layers are students' work too."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 7,370 rows of ArcGIS Online organisations that are class accounts (3 class sets or more in at least 20% of their rows, 10 class sets or more with no organisation name, or layers signed by students read by hand): their other layers are students' work too."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 1,175 rows of class sets: one map layer saved under 5 or more students' initials or names in one ArcGIS Online organisation, or in 4 or more students' own organisations."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 14,557 rows of the ArcGIS Online organisations of universities, colleges and schools (many of their layers are students' work)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 154 rows that repeat an address already in the pack."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 76 rows whose title mentions trafficking (crime statistics tagged traffic, not transit)."
+    },
+    {
+      "id": "left-out",
+      "text": "Left out: 1,456 rows whose subcategory mentions wetlands (map layers of wetlands, not transport)."
+    }
+  ],
+  "name": "240k-transit-apis-for-agents",
+  "old_name": "transit-api-endpoints",
+  "services_tested": {
+    "services": 14010,
+    "tested": 2383449,
+    "passed": 1965868,
+    "passed_pct": 82,
+    "line": "Across these services: 2.3M tested · 82% passed a keyless call",
+    "note": "Counted over the 14,010 export services that this pack's rows belong to: the sum of each service's own tested count and passed count (a keyless GET that returned a data body). They cover every tested endpoint of those services, not only the rows in this pack. The figures in the line are rounded down. Over every service of the export the same sums are 5,129,846 tested and 3,726,509 passed."
+  },
+  "services_file_rows": 14126,
+  "sample_mix": [
+    {
+      "source": "ArcGIS Online layers",
+      "focus_rows": 18964,
+      "sample_rows": 167
+    },
+    {
+      "source": "Nextbike (gbfs.nextbike.net)",
+      "focus_rows": 2662,
+      "sample_rows": 25
+    },
+    {
+      "source": "Tfl (api.tfl.gov.uk)",
+      "focus_rows": 2235,
+      "sample_rows": 21
+    },
+    {
+      "source": "Donkey (stables.donkey.bike)",
+      "focus_rows": 1735,
+      "sample_rows": 16
+    },
+    {
+      "source": "Bird (mds.bird.co)",
+      "focus_rows": 1237,
+      "sample_rows": 12
+    },
+    {
+      "source": "Digitraffic (rata.digitraffic.fi)",
+      "focus_rows": 1181,
+      "sample_rows": 12
+    },
+    {
+      "source": "api.mobidata-bw.de",
+      "focus_rows": 1108,
+      "sample_rows": 11
+    },
+    {
+      "source": "Etagmb (data.etagmb.gov.hk)",
+      "focus_rows": 1000,
+      "sample_rows": 10
+    },
+    {
+      "source": "Transport (v6.bvg.transport.rest)",
+      "focus_rows": 1000,
+      "sample_rows": 10
+    },
+    {
+      "source": "transport.opendata.ch",
+      "focus_rows": 1000,
+      "sample_rows": 10
+    }
+  ],
+  "sample_focus_rows": 85574,
+  "sample_rule": "1,000 rows, or one third of the pack rounded down, whichever is smaller",
+  "files": [
+    {
+      "name": "data/Transit_API_Services_AgentPopulation.csv",
+      "rows": 14126,
+      "bytes": 821594,
+      "sha256": "559548185d2a1033e7646f70745e3b2d2ddd2967154a660c0e5372bf2a012f12"
+    },
+    {
+      "name": "data/Transit_API_Endpoints_AgentPopulation_Sample.csv",
+      "rows": 1000,
+      "bytes": 295897,
+      "sha256": "f9f363f8335384d7a19fb8339b59003986ad02e7e765f97eaeff3224e6cfebb3"
+    },
+    {
+      "name": "data/Transit_API_Endpoints_AgentPopulation_Sample.json",
+      "rows": 1000,
+      "bytes": 491554,
+      "sha256": "b22fdb31b51ed44af903f73ca85cf2642c53b99ff42009420fb16706b0908145"
+    }
+  ],
+  "release_asset": {
+    "name": "Transit_API_Endpoints_AgentPopulation_Snapshot_2026-11-15.csv.gz",
+    "rows": 249684,
+    "bytes": 11013432,
+    "raw_bytes": 77087425,
+    "sha256": "2c17e145694fc4821fc20e09c1687542243e3311230a884d57bce5bf93b5866f",
+    "url": "https://github.com/agentpopulation/240k-transit-apis-for-agents/releases/latest/download/Transit_API_Endpoints_AgentPopulation_Snapshot_2026-11-15.csv.gz"
+  },
+  "release_tag": "snapshot-2026-11-15",
+  "overlaps": [
+    {
+      "repo": "weather-api-endpoints",
+      "name": "170k-weather-apis-for-agents",
+      "title": "Weather API endpoints",
+      "shared": 8804
+    },
+    {
+      "repo": "water-api-endpoints",
+      "name": "260k-water-apis-for-agents",
+      "title": "Rivers and water API endpoints",
+      "shared": 2469
+    },
+    {
+      "repo": "finance-economy-api-endpoints",
+      "name": "120k-finance-economy-apis-for-agents",
+      "title": "Finance and economy API endpoints",
+      "shared": 2580
+    },
+    {
+      "repo": "india-api-endpoints",
+      "name": "130k-india-apis-for-agents",
+      "title": "India API endpoints",
+      "shared": 404
+    },
+    {
+      "repo": "government-open-data-api-endpoints",
+      "name": "1.2m-government-open-data-apis",
+      "title": "Government open data API endpoints",
+      "shared": 22597
+    },
+    {
+      "repo": "statistics-api-endpoints",
+      "name": "270k-statistics-apis-for-agents",
+      "title": "Statistics and census API endpoints",
+      "shared": 605
+    },
+    {
+      "repo": "oceans-api-endpoints",
+      "name": "84k-oceans-apis-for-agents",
+      "title": "Ocean and marine API endpoints",
+      "shared": 1381
+    },
+    {
+      "repo": "maritime-api-endpoints",
+      "name": "22k-maritime-apis-for-agents",
+      "title": "Maritime API endpoints",
+      "shared": 1836
+    },
+    {
+      "repo": "environment-api-endpoints",
+      "name": "160k-environment-apis-for-agents",
+      "title": "Environment API endpoints",
+      "shared": 502
+    },
+    {
+      "repo": "air-quality-api-endpoints",
+      "name": "19k-air-quality-apis-for-agents",
+      "title": "Air quality API endpoints",
+      "shared": 6101
+    },
+    {
+      "repo": "maps-gis-api-endpoints",
+      "name": "350k-maps-gis-apis-for-agents",
+      "title": "Maps and GIS API endpoints",
+      "shared": 4865
+    },
+    {
+      "repo": "agent-ready-api-endpoints",
+      "name": "2.2m-agent-ready-apis",
+      "title": "Agent-ready API endpoints",
+      "shared": 174255
+    },
+    {
+      "repo": "health-api-endpoints",
+      "name": "84k-health-apis-for-agents",
+      "title": "Health API endpoints",
+      "shared": 278
+    },
+    {
+      "repo": "science-api-endpoints",
+      "name": "380k-science-apis-for-agents",
+      "title": "Science API endpoints",
+      "shared": 134
+    },
+    {
+      "repo": "hazards-api-endpoints",
+      "name": "40k-hazards-apis-for-agents",
+      "title": "Hazards and alerts API endpoints",
+      "shared": 345
+    },
+    {
+      "repo": "wildfire-api-endpoints",
+      "name": "4.9k-wildfire-apis-for-agents",
+      "title": "Wildfire API endpoints",
+      "shared": 14
+    },
+    {
+      "repo": "energy-api-endpoints",
+      "name": "67k-energy-apis-for-agents",
+      "title": "Energy API endpoints",
+      "shared": 139
+    },
+    {
+      "repo": "aviation-api-endpoints",
+      "name": "23k-aviation-apis-for-agents",
+      "title": "Aviation API endpoints",
+      "shared": 1179
+    },
+    {
+      "repo": "traffic-api-endpoints",
+      "name": "22k-traffic-apis-for-agents",
+      "title": "Traffic and roadworks API endpoints",
+      "shared": 22790
+    },
+    {
+      "repo": "parking-api-endpoints",
+      "name": "10k-parking-apis-for-agents",
+      "title": "Parking API endpoints",
+      "shared": 10779
+    },
+    {
+      "repo": "earthquake-api-endpoints",
+      "name": "7.8k-earthquake-apis-for-agents",
+      "title": "Earthquake API endpoints",
+      "shared": 34
+    },
+    {
+      "repo": "volcano-tsunami-api-endpoints",
+      "name": "4.2k-volcano-tsunami-apis-for-agents",
+      "title": "Volcano and tsunami API endpoints",
+      "shared": 64
+    },
+    {
+      "repo": "bike-share-api-endpoints",
+      "name": "17k-bike-share-apis-for-agents",
+      "title": "Bike-share API endpoints",
+      "shared": 17059
+    },
+    {
+      "repo": "united-states-api-endpoints",
+      "name": "750k-united-states-apis-for-agents",
+      "title": "United States API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "united-kingdom-api-endpoints",
+      "name": "52k-united-kingdom-apis-for-agents",
+      "title": "United Kingdom API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "france-api-endpoints",
+      "name": "47k-france-apis-for-agents",
+      "title": "France API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "spain-api-endpoints",
+      "name": "8.1k-spain-apis-for-agents",
+      "title": "Spain API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "indonesia-api-endpoints",
+      "name": "22k-indonesia-apis-for-agents",
+      "title": "Indonesia API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "canada-api-endpoints",
+      "name": "19k-canada-apis-for-agents",
+      "title": "Canada API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "netherlands-api-endpoints",
+      "name": "17k-netherlands-apis-for-agents",
+      "title": "Netherlands API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "germany-api-endpoints",
+      "name": "14k-germany-apis-for-agents",
+      "title": "Germany API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "norway-api-endpoints",
+      "name": "12k-norway-apis-for-agents",
+      "title": "Norway API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "brazil-api-endpoints",
+      "name": "14k-brazil-apis-for-agents",
+      "title": "Brazil API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "japan-api-endpoints",
+      "name": "9.8k-japan-apis-for-agents",
+      "title": "Japan API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "australia-api-endpoints",
+      "name": "12k-australia-apis-for-agents",
+      "title": "Australia API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "colombia-api-endpoints",
+      "name": "10k-colombia-apis-for-agents",
+      "title": "Colombia API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "czechia-api-endpoints",
+      "name": "6.3k-czechia-apis-for-agents",
+      "title": "Czechia API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "poland-api-endpoints",
+      "name": "6.3k-poland-apis-for-agents",
+      "title": "Poland API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "taiwan-api-endpoints",
+      "name": "4.2k-taiwan-apis-for-agents",
+      "title": "Taiwan API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "italy-api-endpoints",
+      "name": "7.3k-italy-apis-for-agents",
+      "title": "Italy API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "new-zealand-api-endpoints",
+      "name": "6.1k-new-zealand-apis-for-agents",
+      "title": "New Zealand API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "nordic-api-endpoints",
+      "name": "13k-nordic-apis-for-agents",
+      "title": "Nordic API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "more-europe-api-endpoints",
+      "name": "24k-more-europe-apis-for-agents",
+      "title": "More Europe API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "latin-america-caribbean-api-endpoints",
+      "name": "20k-latin-america-caribbean-apis-for-agents",
+      "title": "Latin America and Caribbean API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "europe-region-arcgis-api-endpoints",
+      "name": "59k-europe-region-arcgis-apis-for-agents",
+      "title": "Europe-region ArcGIS API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "middle-east-africa-api-endpoints",
+      "name": "6.7k-middle-east-africa-apis-for-agents",
+      "title": "Middle East and Africa API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "county-and-city-gis-api-endpoints",
+      "name": "160k-county-and-city-gis-apis-for-agents",
+      "title": "County and city GIS API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "public-agency-gis-api-endpoints",
+      "name": "47k-public-agency-gis-apis-for-agents",
+      "title": "Public agency GIS API endpoints",
+      "shared": 0
+    },
+    {
+      "repo": "arcgis-server-api-endpoints",
+      "name": "25k-arcgis-server-apis-for-agents",
+      "title": "ArcGIS Server API endpoints",
+      "shared": 0
+    }
+  ],
+  "pack_count": 50,
+  "description": "249,684 transit API endpoints that passed a keyless data call. For agent tools, apps, pipelines and evals. CSV, CC BY 4.0.",
+  "live_name": "270k-transit-apis-for-agents",
+  "readme_ap_share": 0.092,
+  "country_counts": {
+    "US": 90776,
+    "DE": 26527,
+    "FR": 15747,
+    "JP": 13594,
+    "IT": 12726,
+    "GB": 10532,
+    "": 9338,
+    "RO": 5997,
+    "CA": 5533,
+    "AU": 4841,
+    "CZ": 4318,
+    "ES": 4305,
+    "CH": 4118,
+    "PL": 3574,
+    "NO": 3178,
+    "HK": 3147,
+    "FI": 3132,
+    "BE": 3124,
+    "IE": 2700,
+    "EU": 2136,
+    "NL": 1552,
+    "SE": 1365,
+    "BR": 1237,
+    "CL": 1066,
+    "AT": 1025,
+    "SI": 846,
+    "CO": 802,
+    "GR": 776,
+    "LU": 765,
+    "NZ": 747,
+    "SK": 700,
+    "DK": 539,
+    "UA": 518,
+    "PT": 492,
+    "PA": 466,
+    "ID": 409,
+    "AR": 408,
+    "IN": 404,
+    "SG": 376,
+    "IO": 326,
+    "HR": 318,
+    "EE": 296,
+    "LV": 258,
+    "TG": 196,
+    "LT": 188,
+    "IL": 169,
+    "RS": 159,
+    "PH": 155,
+    "UY": 150,
+    "AM": 133,
+    "MD": 127,
+    "MX": 125,
+    "EC": 118,
+    "CN": 115,
+    "AE": 104,
+    "HU": 103,
+    "SA": 97,
+    "SV": 96,
+    "BA": 94,
+    "ZA": 94,
+    "TW": 80,
+    "MC": 79,
+    "MK": 79,
+    "RU": 70,
+    "LI": 69,
+    "KH": 61,
+    "KR": 57,
+    "LA": 53,
+    "PK": 52,
+    "MM": 51,
+    "AX": 46,
+    "PE": 46,
+    "GL": 45,
+    "AZ": 44,
+    "TR": 44,
+    "CY": 43,
+    "IS": 43,
+    "TH": 42,
+    "FO": 41,
+    "MY": 41,
+    "NG": 38,
+    "TN": 38,
+    "XK": 31,
+    "AL": 27,
+    "KZ": 26,
+    "CR": 24,
+    "KE": 23,
+    "DO": 21,
+    "IR": 21,
+    "EG": 20,
+    "JM": 20,
+    "PR": 20,
+    "BG": 19,
+    "DZ": 18,
+    "MA": 18,
+    "VE": 16,
+    "BJ": 15,
+    "VI": 15,
+    "BO": 13,
+    "BD": 12,
+    "BW": 12,
+    "CU": 12,
+    "FJ": 12,
+    "IQ": 12,
+    "TZ": 12,
+    "UZ": 12,
+    "BH": 11,
+    "GE": 11,
+    "HN": 11,
+    "PY": 11,
+    "CG": 10,
+    "JO": 10,
+    "LY": 10,
+    "OM": 10,
+    "TJ": 10,
+    "ZM": 10,
+    "ZW": 10,
+    "BB": 9,
+    "CV": 9,
+    "GH": 9,
+    "LK": 9,
+    "TM": 9,
+    "AO": 8,
+    "BS": 8,
+    "BY": 8,
+    "CD": 8,
+    "CI": 8,
+    "FM": 8,
+    "GA": 8,
+    "GY": 8,
+    "ME": 8,
+    "MG": 8,
+    "MT": 8,
+    "MZ": 8,
+    "NA": 8,
+    "NI": 8,
+    "RE": 8,
+    "SY": 8,
+    "SZ": 8,
+    "TT": 8,
+    "VC": 8,
+    "AF": 7,
+    "BI": 7,
+    "BZ": 7,
+    "CF": 7,
+    "CM": 7,
+    "DJ": 7,
+    "ET": 7,
+    "GQ": 7,
+    "KI": 7,
+    "KW": 7,
+    "MU": 7,
+    "NP": 7,
+    "PG": 7,
+    "QA": 7,
+    "RW": 7,
+    "SB": 7,
+    "SR": 7,
+    "TO": 7,
+    "VU": 7,
+    "YE": 7,
+    "AG": 6,
+    "AI": 6,
+    "ER": 6,
+    "GD": 6,
+    "GN": 6,
+    "GT": 6,
+    "GW": 6,
+    "IM": 6,
+    "KN": 6,
+    "KP": 6,
+    "LB": 6,
+    "LC": 6,
+    "LR": 6,
+    "LS": 6,
+    "MN": 6,
+    "MV": 6,
+    "PW": 6,
+    "SC": 6,
+    "SL": 6,
+    "ST": 6,
+    "WS": 6,
+    "BF": 5,
+    "BN": 5,
+    "BT": 5,
+    "DM": 5,
+    "GF": 5,
+    "GM": 5,
+    "GP": 5,
+    "GU": 5,
+    "HT": 5,
+    "JE": 5,
+    "KM": 5,
+    "MH": 5,
+    "ML": 5,
+    "MQ": 5,
+    "MR": 5,
+    "MW": 5,
+    "NC": 5,
+    "SD": 5,
+    "SN": 5,
+    "TL": 5,
+    "AD": 4,
+    "AS": 4,
+    "AW": 4,
+    "BM": 4,
+    "BQ": 4,
+    "CK": 4,
+    "CW": 4,
+    "EH": 4,
+    "GG": 4,
+    "GI": 4,
+    "KY": 4,
+    "MO": 4,
+    "MS": 4,
+    "NE": 4,
+    "NR": 4,
+    "PF": 4,
+    "PS": 4,
+    "SJ": 4,
+    "SM": 4,
+    "SO": 4,
+    "SS": 4,
+    "TC": 4,
+    "TD": 4,
+    "TV": 4,
+    "VG": 4,
+    "VN": 4,
+    "YT": 4,
+    "AQ": 3,
+    "BL": 3,
+    "FK": 3,
+    "KG": 3,
+    "MP": 3,
+    "NU": 3,
+    "SX": 3,
+    "UG": 3,
+    "VA": 3,
+    "CX": 2,
+    "GS": 2,
+    "MF": 2,
+    "NF": 2,
+    "PM": 2,
+    "PN": 2,
+    "SH": 2,
+    "TF": 2,
+    "TK": 2,
+    "WF": 2,
+    "CC": 1,
+    "UM": 1
+  }
+}

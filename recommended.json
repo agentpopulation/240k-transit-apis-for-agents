@@ -1,0 +1,794 @@
+{
+  "pack": "240k-transit-apis-for-agents",
+  "title": "Transit API endpoints",
+  "snapshot": "2026-11-15",
+  "tested": {
+    "min": "2026-11-10",
+    "max": "2026-11-15",
+    "text": "10–15 Nov 2026"
+  },
+  "note": "On the date in last_tested (IST), one GET to the URL, sent with no key, returned HTTP 2xx and a non-empty data body. HTML pages and empty results did not pass. The format column records what came back. This is a test result for that date, not a promise that the URL answers today. Licences, terms, rate limits, accuracy and freshness were not reviewed. Endpoints are URLs, not separate APIs; many share one service.",
+  "licence": "CC BY 4.0: credit AgentPopulation and link https://agentpopulation.com",
+  "focus": "category in (\"Transport & Mobility\", \"Navigation & Geo/Maps\") AND NOT title matches /trafficking/i AND title matches /\\b(bus|buses|rail|railway|train|trains|tram|metro|subway|transit|bike|bikes|bicycle|cycle|cycling|scooter|scooters|gbfs|gtfs|parking|car park|traffic|road|roads|stop|stops|route|routes|transport|mobility|ferry|line|lines|velo|vélo|verkehr|bahn|trafic|stationnement|réseau|sharing|journey|station_status|station_information|system_information)\\b/i",
+  "buckets": [
+    {
+      "id": "agent",
+      "name": "Agent tools",
+      "title": "GBFS bike and scooter feeds",
+      "filter": "tags has agent-ready AND (tags has gbfs OR tags has bike-share)",
+      "endpoints": 16074,
+      "notes": [
+        "3257 of these are availability feeds (station_status, free_bike_status or vehicle_status); the others are feeds such as system information, vehicle types and pricing plans."
+      ],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and are tagged agent-ready (no key sent in the test call, JSON body, passed a data call). Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: url contains \"station_status\". Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Nextbike",
+          "display": "Nextbike",
+          "host": "gbfs.nextbike.net",
+          "endpoints_in_bucket": 2376,
+          "endpoints_in_pack": 2662,
+          "country_codes": [
+            "AT",
+            "BA",
+            "BE",
+            "CH",
+            "CY",
+            "CZ",
+            "DE",
+            "ES",
+            "FR",
+            "GB",
+            "GR",
+            "HR",
+            "IT",
+            "LV",
+            "PL",
+            "PT",
+            "RO",
+            "SE",
+            "SI",
+            "SK",
+            "XK"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 2,
+          "sample_url": "https://gbfs.nextbike.net/maps/gbfs/v2/nextbike_aa/en/station_status.json",
+          "sample_title": "GBFS station_status: biciArteixo (Artexio, ES)",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "Donkey",
+          "display": "Donkey",
+          "host": "stables.donkey.bike",
+          "endpoints_in_bucket": 1736,
+          "endpoints_in_pack": 1736,
+          "country_codes": [
+            "BE",
+            "CH",
+            "DE",
+            "DK",
+            "ES",
+            "FI",
+            "FR",
+            "GB",
+            "HU",
+            "IS",
+            "LI",
+            "NL",
+            "SE"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://stables.donkey.bike/api/public/gbfs/2/Augsburg/de/station_status.json",
+          "sample_title": "Donkey Republic Augsburg: GBFS station_status [de]: Donkey Republic Augsburg (Augsburg) v2.3",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Bird",
+          "display": "Bird",
+          "host": "mds.bird.co",
+          "endpoints_in_bucket": 1224,
+          "endpoints_in_pack": 1237,
+          "country_codes": [
+            "AT",
+            "BE",
+            "CA",
+            "CH",
+            "DE",
+            "ES",
+            "FI",
+            "FR",
+            "IL",
+            "IT",
+            "PT",
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 2,
+          "sample_url": "https://mds.bird.co/gbfs/v2/public/adeje/station_status.json",
+          "sample_title": "GBFS station_status: Bird Adeje (Adeje)",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "api.mobidata-bw.de",
+          "display": "api.mobidata-bw.de",
+          "host": "api.mobidata-bw.de",
+          "endpoints_in_bucket": 1049,
+          "endpoints_in_pack": 1123,
+          "country_codes": [
+            "CH",
+            "DE",
+            "LI"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 4,
+          "sample_url": "https://api.mobidata-bw.de/sharing/gbfs/v2/bird-chalonsenchampagne/station_status",
+          "sample_title": "MobiData BW sharing: GBFS station_status: bird-chalonsenchampagne",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Citybik",
+          "display": "Citybik",
+          "host": "api.citybik.es",
+          "endpoints_in_bucket": 813,
+          "endpoints_in_pack": 813,
+          "country_codes": [
+            "AE",
+            "AR",
+            "AT",
+            "BA",
+            "BE",
+            "BR",
+            "CA",
+            "CH",
+            "CL",
+            "CN",
+            "CO",
+            "CR",
+            "CY",
+            "CZ",
+            "DE",
+            "EC",
+            "ES",
+            "FI",
+            "FR",
+            "GB",
+            "GE",
+            "GR",
+            "HR",
+            "HU",
+            "IE",
+            "IN",
+            "IT",
+            "JP",
+            "KR",
+            "KZ",
+            "LT",
+            "LU",
+            "LV",
+            "MC",
+            "ME",
+            "MT",
+            "MX",
+            "MY",
+            "NL",
+            "NO",
+            "PE",
+            "PL",
+            "PT",
+            "RO",
+            "SA",
+            "SE",
+            "SI",
+            "SK",
+            "TR",
+            "TW",
+            "US",
+            "XK"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://api.citybik.es/v2/networks",
+          "sample_title": "CityBikes: All bike-share networks",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Getaround",
+          "display": "Getaround",
+          "host": "getaround.com",
+          "endpoints_in_bucket": 718,
+          "endpoints_in_pack": 718,
+          "country_codes": [
+            "AT",
+            "BE",
+            "DE",
+            "ES",
+            "FR",
+            "NO"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://getaround.com/gbfs/v3/aalst/system_information",
+          "sample_title": "GBFS system_information: Getaround Aalst (Aalst)",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "Fifteen",
+          "display": "Fifteen",
+          "host": "gbfs.partners.fifteen.eu",
+          "endpoints_in_bucket": 458,
+          "endpoints_in_pack": 503,
+          "country_codes": [
+            "DE",
+            "ES",
+            "FR"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 2,
+          "sample_url": "https://gbfs.partners.fifteen.eu/gbfs/2.2/angouleme/en/station_status.json",
+          "sample_title": "GBFS station_status: Vélo Modalis Angoulême (Angoulême)",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "Lyft",
+          "display": "Lyft",
+          "host": "gbfs.lyft.com",
+          "endpoints_in_bucket": 447,
+          "endpoints_in_pack": 447,
+          "country_codes": [
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://gbfs.lyft.com/gbfs/1.1/bay/en/station_status.json",
+          "sample_title": "Motivate LLC: GBFS station_status [en]: Bay Wheels (San Francisco Bay Area, CA)",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "id": "app",
+      "name": "App features",
+      "title": "Parking and traffic maps",
+      "filter": "(tags has parking OR tags has traffic) AND category is \"Transport & Mobility\" AND NOT title matches /trafficking/i",
+      "endpoints": 30018,
+      "notes": [],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Transparenzportal Hamburg",
+          "display": "Transparenzportal Hamburg",
+          "host": "archiv.transparenz.hamburg.de",
+          "endpoints_in_bucket": 1259,
+          "endpoints_in_pack": 2081,
+          "country_codes": [
+            "DE"
+          ],
+          "formats": [
+            "xml",
+            "json",
+            "csv",
+            "zip",
+            "txt"
+          ],
+          "formats_in_pack": 5,
+          "sample_url": "https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/datastreams_255693_snap_27.JSON",
+          "sample_title": "Traffic Lights Data Hamburg",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Digitraffic",
+          "display": "Digitraffic",
+          "host": "rata.digitraffic.fi",
+          "endpoints_in_bucket": 1181,
+          "endpoints_in_pack": 1181,
+          "country_codes": [
+            "FI",
+            "SE"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://rata.digitraffic.fi/api/v1/live-trains/station/%C3%84HT?arrived_trains=0&arriving_trains=10&departed_trains=0&departing_trains=10",
+          "sample_title": "Finnish rail live trains: Ähtäri",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "region.statistik-nord.de",
+          "display": "region.statistik-nord.de",
+          "host": "region.statistik-nord.de",
+          "endpoints_in_bucket": 1036,
+          "endpoints_in_pack": 1054,
+          "country_codes": [
+            "DE"
+          ],
+          "formats": [
+            "txt",
+            "csv"
+          ],
+          "formats_in_pack": 2,
+          "sample_url": "https://region.statistik-nord.de/detail_timelineexport/12/1101/31/1/341/",
+          "sample_title": "Settlement and traffic areas by type of use groups in Flensburg",
+          "sample_format": "txt",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "Toscana",
+          "display": "Toscana",
+          "host": "dati.toscana.it",
+          "endpoints_in_bucket": 947,
+          "endpoints_in_pack": 998,
+          "country_codes": [
+            "IT"
+          ],
+          "formats": [
+            "csv",
+            "txt"
+          ],
+          "formats_in_pack": 5,
+          "sample_url": "https://dati.toscana.it/dataset/0069ab3b-4c26-4d72-9c8e-358180567f23/resource/4fa6f353-42cc-4876-a363-2ad69b944950/download/sgc-fi-pi-li-a12-a11-livorno-ss1-uscita-direzione-firenze_110_2025.csv",
+          "sample_title": "Region of Tuscany - SGCFIPILI - Station P110 - km 76-release - Traffic monitoring system",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Villingen Schwenningen",
+          "display": "Villingen Schwenningen",
+          "host": "apps.villingen-schwenningen.de",
+          "endpoints_in_bucket": 946,
+          "endpoints_in_pack": 968,
+          "country_codes": [
+            "DE"
+          ],
+          "formats": [
+            "xml"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://apps.villingen-schwenningen.de/mapservervs/getcapbplan.php?map=S_B_1879.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities",
+          "sample_title": "S - Village Building Line Plan / S_B _1879",
+          "sample_format": "xml",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "Hamburg",
+          "display": "Hamburg",
+          "host": "tld.iot.hamburg.de",
+          "endpoints_in_bucket": 832,
+          "endpoints_in_pack": 836,
+          "country_codes": [
+            "DE"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://tld.iot.hamburg.de/v1.1/Datastreams(10)/Observations?$top=10",
+          "sample_title": "Freie und Hansestadt Hamburg traffic lights data (TLD): OGC SensorThings API",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Destatis GENESIS (Germany)",
+          "display": "Destatis GENESIS (Germany)",
+          "host": "genesis.destatis.de",
+          "endpoints_in_bucket": 662,
+          "endpoints_in_pack": 1240,
+          "country_codes": [
+            "DE"
+          ],
+          "formats": [
+            "txt",
+            "xml"
+          ],
+          "formats_in_pack": 2,
+          "sample_url": "https://genesis.destatis.de/genesisWS/downloads/00/tables/33111-0003_00.xml",
+          "sample_title": "Settlement and traffic area: Germany, cut-off date (until 31.12.2015), types of use (AdV list of types of use 1991)",
+          "sample_format": "xml",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "maps2.dcgis.dc.gov",
+          "display": "maps2.dcgis.dc.gov",
+          "host": "maps2.dcgis.dc.gov",
+          "endpoints_in_bucket": 489,
+          "endpoints_in_pack": 707,
+          "country_codes": [
+            "US"
+          ],
+          "formats": [
+            "json"
+          ],
+          "formats_in_pack": 1,
+          "sample_url": "https://maps2.dcgis.dc.gov/DCGIS/rest/services/DCGIS_DATA/Transportation_Parking_WebMercator/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=false&resultRecordCount=5&f=json",
+          "sample_title": "Parking Blockface",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        }
+      ]
+    },
+    {
+      "id": "grounding",
+      "name": "Grounding and data pipelines",
+      "title": "GTFS feeds and CSV tables for scheduled loads",
+      "filter": "tags has gtfs OR format is csv",
+      "endpoints": 38416,
+      "notes": [
+        "1148 of these carry the gtfs tag; the others are CSV tables."
+      ],
+      "criteria": "Services in this pack with the most endpoints that match this bucket and passed a data call. Ties go to the service with more country codes, then by name. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Sample preference in this bucket: format is gtfs AND NOT url contains \"action-report.json\". Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Toscana",
+          "display": "Toscana",
+          "host": "dati.toscana.it",
+          "endpoints_in_bucket": 991,
+          "endpoints_in_pack": 998,
+          "country_codes": [
+            "IT"
+          ],
+          "formats": [
+            "csv"
+          ],
+          "formats_in_pack": 5,
+          "sample_url": "https://dati.toscana.it/dataset/0069ab3b-4c26-4d72-9c8e-358180567f23/resource/4fa6f353-42cc-4876-a363-2ad69b944950/download/sgc-fi-pi-li-a12-a11-livorno-ss1-uscita-direzione-firenze_110_2025.csv",
+          "sample_title": "Region of Tuscany - SGCFIPILI - Station P110 - km 76-release - Traffic monitoring system",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Metropolegrenoble",
+          "display": "Metropolegrenoble",
+          "host": "data.metropolegrenoble.fr",
+          "endpoints_in_bucket": 928,
+          "endpoints_in_pack": 973,
+          "country_codes": [
+            "FR"
+          ],
+          "formats": [
+            "csv"
+          ],
+          "formats_in_pack": 5,
+          "sample_url": "https://data.metropolegrenoble.fr/sites/default/files/dataset/2022/06/27/85c1dc61-04a0-4bf2-9042-ab54b945ab78/csv_gen_85c1dc61_04a0_4bf2_9042_ab54b945ab78_62b9ab80f3fd6.csv",
+          "sample_title": "Grenoble-Alpes Métropole: Arceaux à vélo sur le territoire de Grenoble / arceaux_epsg4326.csv",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Nantesmetropole",
+          "display": "Nantesmetropole",
+          "host": "data.nantesmetropole.fr",
+          "endpoints_in_bucket": 593,
+          "endpoints_in_pack": 1744,
+          "country_codes": [
+            "FR"
+          ],
+          "formats": [
+            "csv",
+            "json"
+          ],
+          "formats_in_pack": 4,
+          "sample_url": "https://data.nantesmetropole.fr/api/explore/v2.1/catalog/datasets/244400404_ligne-covoiturage-covoitici-nantes-metropole-gtfs/records?limit=1",
+          "sample_title": "244400404_ligne-covoiturage-covoitici-nantes-metropole-gtfs",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-12"
+        },
+        {
+          "service": "Eurostat dissemination API",
+          "display": "Eurostat dissemination API",
+          "host": "ec.europa.eu",
+          "endpoints_in_bucket": 463,
+          "endpoints_in_pack": 1786,
+          "country_codes": [
+            "EU"
+          ],
+          "formats": [
+            "csv"
+          ],
+          "formats_in_pack": 3,
+          "sample_url": "https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/avia_goexcc?format=SDMX-CSV&compressed=true",
+          "sample_title": "International extra-EU freight and mail air transport between reporting and partner world regions and countries by type of schedule (from 2008 and onwards)",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "Stadt Zürich Open Data",
+          "display": "Stadt Zürich Open Data",
+          "host": "data.stadt-zuerich.ch",
+          "endpoints_in_bucket": 460,
+          "endpoints_in_pack": 505,
+          "country_codes": [
+            "CH"
+          ],
+          "formats": [
+            "csv"
+          ],
+          "formats_in_pack": 2,
+          "sample_url": "https://data.stadt-zuerich.ch/dataset/bev_zuz_jahr_quartier_od3511/download/BEV351OD3511.csv",
+          "sample_title": "Trains from abroad to the place of arrival and the city quarter",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "Ireland Open Data Portal",
+          "display": "Ireland Open Data Portal",
+          "host": "ws.cso.ie",
+          "endpoints_in_bucket": 446,
+          "endpoints_in_pack": 881,
+          "country_codes": [
+            "IE"
+          ],
+          "formats": [
+            "csv"
+          ],
+          "formats_in_pack": 2,
+          "sample_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/CEPHA29/CSV/1.0/en",
+          "sample_title": "CEPHA29 - Total Commodities Conveyed by Freight Trains",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "Lombardia",
+          "display": "Lombardia",
+          "host": "www.dati.lombardia.it",
+          "endpoints_in_bucket": 430,
+          "endpoints_in_pack": 1967,
+          "country_codes": [
+            "IT"
+          ],
+          "formats": [
+            "csv",
+            "json"
+          ],
+          "formats_in_pack": 4,
+          "sample_url": "https://www.dati.lombardia.it/resource/yqye-t4rp.json?$limit=1",
+          "sample_title": "Orario Ferroviario Regionale - Routes",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "opendata.essen.de",
+          "display": "opendata.essen.de",
+          "host": "opendata.essen.de",
+          "endpoints_in_bucket": 398,
+          "endpoints_in_pack": 402,
+          "country_codes": [
+            "DE"
+          ],
+          "formats": [
+            "csv"
+          ],
+          "formats_in_pack": 3,
+          "sample_url": "https://opendata.essen.de/sites/default/files/Radverkehrsz%C3%A4hlung%202023_3.csv",
+          "sample_title": "Cycling censuses",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        }
+      ]
+    },
+    {
+      "id": "evals",
+      "name": "Evals and testing",
+      "title": "Varied responses for tool-call tests",
+      "filter": "the whole pack",
+      "endpoints": 249684,
+      "notes": [],
+      "criteria": "Services in this pack that returned the most different formats, then the most endpoints that passed a data call, then by name: a mix of response shapes to test parsers and tool calls. Only services with at least one bucket row that matches the focus rule are listed, and the sample comes from those rows; the counts cover the whole bucket. The sample URL is the first row by URL sort after preferring, in this order: rows that match the bucket's sample preference when it has one, rows that return values rather than describe a dataset or a service (not ERDDAP /info/ pages, OGC GetCapabilities requests, bare OWS addresses, PxWeb tables, UN SDG series lists, Statistics Canada download pointers, WorldPop listings, GTFS validation reports, untitled rows or service root addresses), and agent-ready rows. Services named \"ArcGIS organization\" hold map layers from many owners and are added only when fewer than 5 other services match.",
+      "services": [
+        {
+          "service": "Портал відкритих даних",
+          "display": "Портал відкритих даних",
+          "host": "data.gov.ua",
+          "endpoints_in_bucket": 455,
+          "endpoints_in_pack": 455,
+          "country_codes": [
+            "UA"
+          ],
+          "formats": [
+            "csv",
+            "json",
+            "zip",
+            "xml",
+            "txt",
+            "geojson"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://data.gov.ua/dataset/0731fd5d-3123-42fa-ac19-4008a25a40aa/resource/f3c07f9f-1d93-4098-926e-7efcce96bc86/download/roads-csv.json",
+          "sample_title": "Дані щодо ремонту автомобільних доріг місцевого значення Кельменецької селищної ради - roads.csv.json",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Dublinked Open Data for the Dublin Regio",
+          "display": "Dublinked Open Data for the Dublin Regio",
+          "host": "data.smartdublin.ie",
+          "endpoints_in_bucket": 346,
+          "endpoints_in_pack": 346,
+          "country_codes": [
+            "IE"
+          ],
+          "formats": [
+            "csv",
+            "json",
+            "geojson",
+            "xml",
+            "zip",
+            "txt"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://data.smartdublin.ie/dataset/0400ca4b-6f92-4884-a0b6-f1661d5613c3/resource/bb7532e7-e45b-49b4-97dc-7f59eb1c3177/download/gritting-routes-dlr.geojson",
+          "sample_title": "Gritting Routes DLR",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        },
+        {
+          "service": "Canadian Urban Data Catalogue (CUDC)",
+          "display": "Canadian Urban Data Catalogue (CUDC)",
+          "host": "www.donneesquebec.ca",
+          "endpoints_in_bucket": 248,
+          "endpoints_in_pack": 248,
+          "country_codes": [
+            "CA"
+          ],
+          "formats": [
+            "csv",
+            "xml",
+            "json",
+            "geojson",
+            "zip",
+            "txt"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://www.donneesquebec.ca/recherche/dataset/099d789b-fd45-40ab-9a22-2f94a9500548/resource/7574e7f5-197c-4a95-b10c-b6da9b759bfa/download/stationnement.json",
+          "sample_title": "Parking areas",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Canadian Urban Data Catalogue (CUDC)",
+          "display": "Canadian Urban Data Catalogue (CUDC)",
+          "host": "donnees.montreal.ca",
+          "endpoints_in_bucket": 102,
+          "endpoints_in_pack": 102,
+          "country_codes": [
+            "CA"
+          ],
+          "formats": [
+            "csv",
+            "json",
+            "geojson",
+            "txt",
+            "xml",
+            "zip"
+          ],
+          "formats_in_pack": 6,
+          "sample_url": "https://donnees.montreal.ca/dataset/02ebdab9-cbf3-4f56-8c29-79fa0ed0ed2e/resource/af3fd28f-19ee-4c80-b8d9-29f17f18620d/download/feux-circulation.geojson",
+          "sample_title": "Traffic lights - locations all intersections - Traffic lights",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Transparenzportal Hamburg",
+          "display": "Transparenzportal Hamburg",
+          "host": "archiv.transparenz.hamburg.de",
+          "endpoints_in_bucket": 2081,
+          "endpoints_in_pack": 2081,
+          "country_codes": [
+            "DE"
+          ],
+          "formats": [
+            "xml",
+            "json",
+            "zip",
+            "csv",
+            "txt"
+          ],
+          "formats_in_pack": 5,
+          "sample_url": "https://archiv.transparenz.hamburg.de/hmbtgarchive/HMDK/datastreams_255693_snap_27.JSON",
+          "sample_title": "Traffic Lights Data Hamburg",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Toscana",
+          "display": "Toscana",
+          "host": "dati.toscana.it",
+          "endpoints_in_bucket": 998,
+          "endpoints_in_pack": 998,
+          "country_codes": [
+            "IT"
+          ],
+          "formats": [
+            "csv",
+            "xml",
+            "txt",
+            "geojson",
+            "zip"
+          ],
+          "formats_in_pack": 5,
+          "sample_url": "https://dati.toscana.it/dataset/0069ab3b-4c26-4d72-9c8e-358180567f23/resource/4fa6f353-42cc-4876-a363-2ad69b944950/download/sgc-fi-pi-li-a12-a11-livorno-ss1-uscita-direzione-firenze_110_2025.csv",
+          "sample_title": "Region of Tuscany - SGCFIPILI - Station P110 - km 76-release - Traffic monitoring system",
+          "sample_format": "csv",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "Metropolegrenoble",
+          "display": "Metropolegrenoble",
+          "host": "data.metropolegrenoble.fr",
+          "endpoints_in_bucket": 973,
+          "endpoints_in_pack": 973,
+          "country_codes": [
+            "FR"
+          ],
+          "formats": [
+            "csv",
+            "xml",
+            "geojson",
+            "json",
+            "txt"
+          ],
+          "formats_in_pack": 5,
+          "sample_url": "https://data.metropolegrenoble.fr/sites/default/files/dataset/2022/06/27/85c1dc61-04a0-4bf2-9042-ab54b945ab78/arceaux_epsg4326.json",
+          "sample_title": "Grenoble-Alpes Métropole: Arceaux à vélo sur le territoire de Grenoble / arceaux_epsg4326.json",
+          "sample_format": "geojson",
+          "sample_last_tested": "2026-11-15"
+        },
+        {
+          "service": "ArcGIS Online: Helsingin Seudun Liikenteen (HSL) kaupunkipyöräasemat",
+          "display": "ArcGIS Online: Helsingin Seudun Liikenteen (HSL) kaupunkipyöräasemat",
+          "host": "opendata.arcgis.com",
+          "endpoints_in_bucket": 557,
+          "endpoints_in_pack": 557,
+          "country_codes": [
+            "AU",
+            "CA",
+            "FI",
+            "GB",
+            "IE",
+            "NL",
+            "SE"
+          ],
+          "formats": [
+            "xml",
+            "csv",
+            "geojson",
+            "json",
+            "zip"
+          ],
+          "formats_in_pack": 5,
+          "sample_url": "https://opendata.arcgis.com/datasets/27b68252764f4d7b8ec040ff44481dbe_0.geojson",
+          "sample_title": "Helsinki Region Transport (HSL) frequencies",
+          "sample_format": "json",
+          "sample_last_tested": "2026-11-14"
+        }
+      ]
+    }
+  ]
+}
